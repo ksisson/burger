@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Eat The Burger</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <img src="https://db3h9mjhnho7v.cloudfront.net/news_cover_jumbo/5931f5cdbe854/avobun-1780.jpg" height="300px">
+        </div>
+    </div>
+    
+<div class="row">
+        
+
+        <div class="col-md-6">
+        <ol>
+        {{#each burger}}
+            {{#unless devoured}}
+            <li>
+            {{burger_name}}
+
+            <button class="eat" data-id="{{id}}" data-devoured="false">
+                Devour It
+            </button>
+        </li>
+        <br>
+            {{/unless}}
+        {{/each}}
+        </ol>
+        </div>
+
+        <div class="col-md-6">
+        <ol>
+        {{#each burger}}
+            {{#if devoured}}
+            <li>
+            {{burger_name}}
+
+            <button class="eat" data-id="{{id}}" data-devoured="true">
+                Eat me again
+            </button>
+        </li>
+        <br>
+            {{/if}}
+        {{/each}}
+        </ol>
+        </div>
+</div>
+<div class="row text-center">
+    <div class="col-md-12">
+
+    <h2>Add a Burger</h2>
+    <form class="create-form">
+
+    <div class="form-group">
+        <label for="burger">Burger Name:</label>
+        <input type="text" id="burger" name="name">
+    </div>
+
+    <button type="submit">Add Burger</button>
+    </form>
+    </div>
+</div>
+</div>
