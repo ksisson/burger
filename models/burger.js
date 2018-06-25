@@ -12,10 +12,15 @@ var burger = {
         });
         
     },
-    updateOne: function(val, id, cb){
-        orm.updateOne("burgers", val, "devoured", id, function(res){
+    updateOne: function(id, cb){
+        orm.updateOne("burgers", true, "devoured", id, function(res){
             cb(res)
         });
+    },
+    deleteOne: function(id, cb){
+        orm.deleteOne("burgers", id, function(res){
+            cb(res)
+        })
     }
 }
 

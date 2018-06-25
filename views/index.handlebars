@@ -20,7 +20,7 @@
             <li>
             {{burger_name}}
 
-            <button class="eat" data-id="{{id}}" data-devoured="false">
+            <button class="eat" id="{{id}}">
                 Devour It
             </button>
         </li>
@@ -37,8 +37,8 @@
             <li>
             {{burger_name}}
 
-            <button class="eat" data-id="{{id}}" data-devoured="true">
-                Eat me again
+            <button class="delburger" id="{{id}}">
+                Delete
             </button>
         </li>
         <br>
@@ -58,7 +58,7 @@
         <input type="text" id="burger" name="name">
     </div>
 
-    <button type="submit">Add Burger</button>
+    <button type="submit" id="submitbtn">Add Burger</button>
     </form>
     </div>
 </div>
