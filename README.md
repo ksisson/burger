@@ -1,1 +1,2 @@
-# burger
+#### Eat It
+Eat It is an app that uses a mysql database to keep track of burgers that have been made, devoured, and deleted. Use the "Make A Burger" box to cook up a fresh burger, name it whatever you'd like. Once you hit the "Cook It" button, the burger will appear under the "Made Burgers" list. Click the "Devour It" button to eat the burger and move it to the "Consumed Burgers" list. If you no longer want to see the burger you consumed, press the "Delete" button and erase it from the database. Give it a shot.
